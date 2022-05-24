@@ -15,6 +15,8 @@ class Auth extends BaseController
         return view('login');
     }
 
+    
+
     public function cadastro_cliente()
     {
         return view('cadastro_cliente');
@@ -58,13 +60,7 @@ class Auth extends BaseController
         }
         else
         {
-<<<<<<< HEAD
 
-            
-=======
-            //$post=$this->request->getpost();
-            //$this->model->save($post); //ID
->>>>>>> 025aafc09a10e4787ccb863cf92f8aeacd485dc8
             //echo 'ok'; vamos registrar no db
             $usuario_funcionario = $this->request->getPost('usuario_funcionario');
             $senha_funcionario = $this->request->getPost('senha_funcionario');

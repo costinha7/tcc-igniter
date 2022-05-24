@@ -1,4 +1,3 @@
-
 <header>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6511a5;">
 
@@ -12,7 +11,7 @@
       
       <div style="justify-content: flex-end; align-content: end; display: inline-block;">
         <a class="navbar-brand text-white" href="home">
-        <img src="assets/img/menuicon.png" alt="" width="40" height="40"> 
+        <img src="/img/faviconx.png" alt="" width="40" height="40"> 
            Book Solution
         </a>
       </div>
@@ -22,14 +21,14 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav" style="">
             <li class="nav-item dropdown">
-                <a class="text-white btn" aria-current="page" href="home">Home</a>
+                <a class="text-white btn" aria-current="page" href="<?= base_url('Home/index') ?>">Home</a>
 
               <li class="nav-item dropdown">
                 <a class=" text-white btn" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Cadastros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-black" href="cadastro_funcionario">Funcionário</a>
+                  <a class="dropdown-item text-black" href="<?= base_url('auth/formulario_funcionario') ?>">Funcionário</a>
                   <a class="dropdown-item text-black" href="cadastro_cliente">Clientes</a>
                 </ul>
               </li>

@@ -9,9 +9,9 @@ class Home extends BaseController
 {
     public function index()
     {
-        $loginModel = new \App\Models\LoginModel();
+        /*$loginModel = new \App\Models\LoginModel();
         $loginUserID = session()->get('LoginUser');
-        $userInfo = $loginModel->find($loginUserID);
+        $userInfo = $loginModel->find($loginUserID);*/
         
         return view('home');
     }
