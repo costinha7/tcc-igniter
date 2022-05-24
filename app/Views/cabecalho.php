@@ -22,4 +22,3 @@ if( !isset($_SESSION['id_funcionario']) OR !isset($_SESSION['usuario_funcionario
 <title class="titlesite">Book Solution</title>
 </head>
 <body>
-<?php include'menu.php';?>

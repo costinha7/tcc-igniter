@@ -1,5 +1,6 @@
 <?php
 include 'cabecalho.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,7 @@ include 'cabecalho.php';
 
    
 <br>
+<?php include'menu.php';?>
     <div class="container">
         <div class="text">Cadastro de Funcionário</div>
 
