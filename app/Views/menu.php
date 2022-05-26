@@ -19,7 +19,7 @@
   </div>
 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav" style="">
+            <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="text-white btn" aria-current="page" href="<?= base_url('Home/index') ?>">Home</a>
 
@@ -28,8 +28,8 @@
                   Cadastros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-black" href="<?= base_url('auth/formulario_funcionario') ?>">Funcionário</a>
-                  <a class="dropdown-item text-black" href="cadastro_cliente">Clientes</a>
+                  <a class="dropdown-item text-black" href="<?= base_url('home/formulario_funcionario') ?>">Funcionário</a>
+                  <a class="dropdown-item text-black" href="<?= base_url('home/cadastro_cliente') ?>">Clientes</a>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -38,7 +38,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="livros">Consulta</a>
-                  <a class="dropdown-item" href="cadastro_livro">Cadastro</a>
+                  <a class="dropdown-item" href="<?= base_url('home/formulario_livro') ?>">Cadastro</a>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -51,7 +51,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="text-white btn"  href="sair">
+                <a class="text-white btn"  href="<?= site_url('auth/logout'); ?>">
                   Sair
                 </a>
                 </li>

@@ -1,17 +1,14 @@
-
-
-<h1 class="h1titulo">LIVROS</h1>
+<!--<h1 class="h1titulo">LIVROS</h1>
 
 <form action="livros.php" method="GET">
 
  <div class="card-group">
-
   
  </div>
 </form>
 <li><a id="a01" href="cadastro_livro">Cadastro de Livro</a></li>
 
-<?php
+</*?php
 
 include_once "./conexao.php";
 
@@ -36,7 +33,7 @@ if(($result_livro) AND ($result_livro->rowCount() != 0)){
 }
 
 
-?>
+*/?>
 
 </div>
-</form>
+</form>-->

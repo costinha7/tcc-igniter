@@ -1,3 +1,6 @@
+<?php include 'cabecalho.php'; ?>
+
+
 <div class="cadlivro">
 
 <h2 class="h2titulo">CADASTRO DE LIVRO</h2>
@@ -17,5 +20,3 @@
 </form>
 
 </div>
-
-<?php include 'rodape.php'; ?>
