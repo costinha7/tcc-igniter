@@ -40,7 +40,7 @@
  database.default.hostname = localhost
  database.default.database = bs_ign
  database.default.username = root
- database.default.password =
+ database.default.password = @LARbook$1458$
  database.default.DBDriver = MySQLi
  database.default.DBPrefix =
 
