@@ -37,8 +37,8 @@
           <span class="text-danger"><?= isset($validation) ? display_error($validation, 'senha_funcionario') : ''  ?></span>          
           <label>Senha</label>
         </div>
-        <i class="pass" style="text-decoration:none;cursor: text;">Login: alradmin</i>
-        <i class="pass" style="text-decoration:none;cursor: text;">Senha: ALR#1245#</i>
+        <i class="pass" style="text-decoration:none;cursor: text;">Login: teste</i>
+        <i class="pass" style="text-decoration:none;cursor: text;">Senha: 123</i>
         <div class='' style='color: #ff0000'><p><br>
 
         </p></div>

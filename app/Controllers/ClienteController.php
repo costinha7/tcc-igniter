@@ -10,4 +10,7 @@ class ClienteController extends BaseController
     {
         return view('cadastro_cliente');
     }
+
+
+    
 }
