@@ -6,8 +6,8 @@ use App\Controllers\BaseController;
 
 class ClienteController extends BaseController
 {
-    public function index()
+    public function cadastro_cliente()
     {
-        //
+        return view('cadastro_cliente');
     }
 }

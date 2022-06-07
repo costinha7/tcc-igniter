@@ -16,22 +16,10 @@ class Home extends BaseController
         return view('home');
     }
 
-    public function cadastro_cliente()
-    {
-        return view('cadastro_cliente');
-    }
+    
 
-    public function formulario_funcionario(){
+    
 
-        return view('formulario_funcionario');
-
-    }
-
-    public function formulario_livro(){
-
-        return view('formulario_livro');
-
-    }
-
+   
 }
 

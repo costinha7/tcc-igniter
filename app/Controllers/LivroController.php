@@ -6,8 +6,10 @@ use App\Controllers\BaseController;
 
 class LivroController extends BaseController
 {
-    public function index()
-    {
-        //
+    public function formulario_livro(){
+
+        return view('formulario_livro');
+
     }
+
 }
