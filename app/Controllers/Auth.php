@@ -16,7 +16,7 @@ class Auth extends BaseController
     }
 
     
-    public function formulario_funcionario(){
+    public function cadastro_funcionario(){
 
         return view('formulario_funcionario');
 
@@ -84,7 +84,7 @@ class Auth extends BaseController
             }
             else
             {
-                return redirect()->to('auth/formulario_funcionario')->with('success','Usuário Funcionário Cadastrado!');
+                return redirect()->to('auth/cadastro_funcionario')->with('success','Usuário Funcionário Cadastrado!');
             }
 
         }

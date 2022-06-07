@@ -11,4 +11,11 @@ class ReservaController extends BaseController
         return view('reserva_conteudo');
 
     }
+
+    public function cadastro_reserva(){
+
+        return view('formulario_reserva');
+
+    }
+
 }

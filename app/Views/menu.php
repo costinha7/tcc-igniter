@@ -28,8 +28,8 @@
                   Cadastros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item text-black" href="<?= base_url('home/formulario_funcionario') ?>">Funcionário</a>
-                  <a class="dropdown-item text-black" href="<?= base_url('home/cadastro_cliente') ?>">Clientes</a>
+                  <a class="dropdown-item text-black" href="<?= base_url('auth/cadastro_funcionario') ?>">Funcionário</a>
+                  <a class="dropdown-item text-black" href="<?= base_url('clientecontroller/cadastro_cliente') ?>">Clientes</a>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -37,8 +37,8 @@
                   Livros
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="livros">Consulta</a>
-                  <a class="dropdown-item" href="<?= base_url('home/formulario_livro') ?>">Cadastro</a>
+                  <a class="dropdown-item" href="<?= base_url('livrocontroller/livros') ?>">Consulta</a>
+                  <a class="dropdown-item" href="<?= base_url('livrocontroller/cadastro_livro') ?>">Cadastro</a>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -46,8 +46,8 @@
                   Reservas
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="reserva">Consulta</a>
-                  <a class="dropdown-item" href="cadastro_reserva">Reserva</a>
+                  <a class="dropdown-item" href="<?= base_url('reservacontroller/reservas') ?>">Consulta</a>
+                  <a class="dropdown-item" href="<?= base_url('reservacontroller/cadastro_reserva') ?>">Reservar</a>
                 </ul>
               </li>
               <li class="nav-item">
