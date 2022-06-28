@@ -4,17 +4,29 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
+use CodeIgniter\Database\ConnectionInterface;
+
 class LivroModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'livros';
-    protected $primaryKey       = 'id';
+    protected $table            = 'livro';
+    protected $primaryKey       = 'id_livro';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['autor','editora','genero','codigo','titulo','data_publicacao','idioma','volume','edicao','data_registro','descricao'];
+
+    function getLivros(){
+        $builder = $this->db->table("livro");
+
+        $res = $builder->get()->getResult();
+
+        return $res;
+    }
+
+
 
     // Dates
     protected $useTimestamps = false;

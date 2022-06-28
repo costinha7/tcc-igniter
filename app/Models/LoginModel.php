@@ -6,17 +6,15 @@ use CodeIgniter\Model;
 
 class LoginModel extends Model
 {
-    
+    protected $DBGroup          = 'default';
     protected $table            = 'funcionario';
     protected $primaryKey       = 'id_funcionario';
-    protected $allowedFields    = ['usuario_funcionario','senha_funcionario','cpf_funcionario','cargo','data_admissao','email_funcionario','celular_funcionario','nome_funcionario'];
-    protected $DBGroup        = 'default';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
-    protected $returnType       = 'array'; //object buga.
-    
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
+    protected $allowedFields    = ['usuario_funcionario','senha_funcionario','cpf_funcionario','cargo','data_admissao','email_funcionario','celular_funcionario','nome_funcionario'];
 
     // Dates
     protected $useTimestamps = false;

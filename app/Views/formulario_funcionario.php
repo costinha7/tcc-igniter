@@ -51,7 +51,7 @@
               <div class="input-data">
                  <input type="date" name="data_admissao">
                  <div class="underline"></div>
-                 <label for="" style="margin-left: 100px;">Data de Admissão</label>
+                 <label for="" style="">Data de Admissão</label>
               </div>
             </div>
             

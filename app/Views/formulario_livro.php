@@ -1,8 +1,22 @@
 <?php include 'cabecalho.php'; ?>
 
+
 <div class="container">
    <div class="text">Cadastro de Livro</div>
-   <form method="POST" action="cadastro_livro">
+   <form action="<?= base_url('livrocontroller/registrolivro') ?>" method="post">
+
+   <?= csrf_field(); ?>
+           <?php 
+           if(!empty(session()->getFlashdata('fail'))) : ?>
+           <div class="alert alert-danger"> <?= session()->getFlashdata('fail'); ?> </div>
+           <?php endif ?>
+
+           <?php 
+           if(!empty(session()->getFlashdata('success'))) : ?>
+           <div class="alert alert-success"><?= session()->getFlashdata('success'); ?></div> <!---->
+           <?php endif ?>
+
+
       <div class="form-row">
          <div class="input-data">
             <input type="text" required name="titulo">
@@ -29,7 +43,7 @@
       </div>
       <div class="form-row">
          <div class="input-data">
-            <input type="text" required name="tipo_genero">
+            <input type="text" required name="genero">
             <div class="underline"></div>
             <label for="">Genero</label>
          </div>
@@ -53,12 +67,12 @@
       </div>
       <div class="form-row">
          <div class="input-data">
-            <input type="text" required name="nome_autor">
+            <input type="text" required name="autor">
             <div class="underline"></div>
             <label for="">Autor</label>
          </div>
          <div class="input-data">
-            <input type="text" required name="nome_editora">
+            <input type="text" required name="editora">
             <div class="underline"></div>
             <label for="" style="margin-bottom: 20px;">Editora</label>
          </div>
