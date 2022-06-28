@@ -6,11 +6,6 @@ use App\Controllers\BaseController;
 
 class LivroController extends BaseController
 {
-
-   
-
-
-
     //pagina de cadastro
     public function cadastro_livro(){
 
@@ -84,13 +79,13 @@ class LivroController extends BaseController
         }
     }
 
-    //funcao consultar livros registrados
+    //
     public function __construct()
     {
         $this->livro_model = new LivroModel();
     }
 
-     //pagina de consulta
+     //pagina de consulta funcao consultar livros registrados
      public function livros(){
 
         $data['livro_info'] = $this->livro_model->getLivros();

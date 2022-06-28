@@ -18,6 +18,7 @@ class LivroModel extends Model
     protected $protectFields    = true;
     protected $allowedFields    = ['autor','editora','genero','codigo','titulo','data_publicacao','idioma','volume','edicao','data_registro','descricao'];
 
+    //realizar a consulta dos registros
     function getLivros(){
         $builder = $this->db->table("livro");
 
