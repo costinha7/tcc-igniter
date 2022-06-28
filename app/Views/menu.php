@@ -10,7 +10,7 @@
       </button>
       
       <div style="justify-content: flex-end; align-content: end; display: inline-block;">
-        <a class="navbar-brand text-white" href="home">
+        <a class="navbar-brand text-white" href="<?= base_url('Home/index') ?>">
         <img src="/img/faviconx.png" alt="" width="40" height="40"> 
            Book Solution
         </a>
