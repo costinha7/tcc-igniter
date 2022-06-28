@@ -41,6 +41,4 @@ google.charts.setOnLoadCallback(desenharPizza);
 
 <div id="graficoPizza"></div>
 
-<a href=""> desloga </a>
-
 <?php include 'rodape.php'; ?>
