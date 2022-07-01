@@ -8,13 +8,22 @@ class ReservaModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'reservas';
-    protected $primaryKey       = 'id';
+    protected $primaryKey       = 'id_reserva';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['data_reserva,data_entrega,clinte_reserva,clivro_reserva'];
+     
+    //realizar a consulta dos registros
+     function getReservas(){
+        $builder = $this->db->table("reserva");
+
+        $res = $builder->get()->getResult();
+
+        return $res;
+    }
 
     // Dates
     protected $useTimestamps = false;
